@@ -1,0 +1,64 @@
+
+[v1.0.0] - 2026-08-30
+- 🚀 PHIÊN BẢN CHÍNH THỨC v1.0.0:
+- - Tích hợp đầy đủ 7 kịch bản xem video (Search, Shorts, Live, Playlist, Đề xuất, Duyệt xem, Warm-up)
+- - Tương tác thông minh mô phỏng người dùng thật (Like, Sub, Comment, Share, Skip Ads)
+--------------------------------------------------------------------------------
+1. DANH SÁCH 7 KỊCH BẢN XEM VIDEO CHUYÊN NGHIỆP:
+   - 🔍 1. Video Thường (Search / Direct):
+     + Tìm kiếm tự nhiên theo Tên Kênh / Từ khóa tiêu đề -> Mở trang Kênh -> Chọn tab Videos -> Click đúng video mục tiêu.
+     + Nếu không thấy kênh, chuyển sang tìm kiếm chính xác bằng Link Video hoặc mở trực tiếp.
+   - ⚡ 2. Video Ngắn (Shorts <60s):
+     + Tự động mở vào luồng Reel Player toàn màn hình, vuốt lướt tương tác như người dùng thật.
+   - 🔴 3. Livestream (Trực Tiếp):
+     + Tự động tìm kiếm kênh và kích hoạt bộ lọc Live / tab Trực tiếp để xem luồng phát sóng.
+   - 📂 4. Danh Sách Phát (Playlist):
+     + Tìm kênh -> Mở tab Playlists -> Quét thẻ danh sách phát -> Bấm "Play all / Phát tất cả".
+   - 💡 5. Video Đề Xuất (Suggested Videos):
+     + Mở video xuất phát -> Cuộn quét khu vực đề xuất an toàn bên dưới player (Y >= 38%) -> Khớp video thuộc hệ thống -> Click chip "From/Từ kênh" sau 5 lần cuộn.
+   - 🏠 6. Duyệt Xem Trang Chủ (Home Browse):
+     + Duyệt xem trang chủ YouTube (Home Feed) -> Quét tìm video của hệ thống -> Tự động chuyển sang tìm kiếm nếu chưa xuất hiện sau 5 lượt lướt.
+   - 🌱 7. Nuôi Cookie / Tài Khoản (Warm-up):
+     + Lướt trang chủ & tìm kiếm các chủ đề ngẫu nhiên (Lofi chill, công nghệ, tin tức...) để tạo lịch sử xem và nuôi Cookie trust cho tài khoản Gmail.
+
+2. TÍNH NĂNG TƯƠNG TÁC THÔNG MINH (HUMAN-LIKE INTERACTIONS):
+   - Đặt thời gian xem ngẫu nhiên theo dải [time_min, time_max] cho từng kịch bản.
+   - Tự động nhận diện loại video thực tế (Shorts, Live, Playlist, Thường) để áp dụng đúng cấu hình.
+   - Tỷ lệ tương tác riêng biệt: Like, Đăng ký (Subscribe), Bình luận (Comment) và Chia sẻ (Share).
+   - Tự động bỏ qua quảng cáo (Skip Ads), đóng popup Premium/Music và popup "Bạn vẫn đang xem à?".
+   - Cơ chế tự động hồi phục: Nếu app YouTube bị văng ra ngoài, Tool lập tức phát hiện và mở lại video.
+
+3. XỬ LÝ ROBOT / CAPTCHA TỰ ĐỘNG:
+   - Khi đăng nhập Gmail gặp thông báo "confirm you're not a robot" hoặc captcha, hệ thống tự động đánh dấu LoginApp = 2 lên CSDL để loại bỏ tài khoản này, không tải lại trong các lượt sau.
+
+4. TỰ ĐỘNG CẬP NHẬT PHIÊN BẢN (AUTO-UPDATER):
+   - Tự động kiểm tra bản cập nhật mới từ GitHub khi khởi động ứng dụng hoặc qua nút "🔄 Cập Nhật".
+   - Tải về và tự động thay thế file EXE mượt mà bằng script ngầm.
+
+================================================================================
+HƯỚNG DẪN SỬ DỤNG TOOL (QUICK START GUIDE)
+================================================================================
+1. Chuẩn bị:
+   - Cắm điện thoại / Box Phone vào máy tính hoặc kết nối qua cùng mạng LAN/Wi-Fi (Port 5555).
+   - Bật chế độ "Gỡ lỗi USB" (USB Debugging) trên điện thoại.
+   - Khởi động file "DCYTBView.exe".
+
+2. Kích hoạt bản quyền (Lần đầu mở tool):
+   - Copy "Mã máy của bạn (Hardware ID)" gửi cho Quản trị viên để nhận "Mã kích hoạt".
+   - Dán mã vào ô và bấm "⚡ Kích Hoạt Ngay".
+
+3. Thiết lập và Chạy kịch bản:
+   - Bước 1: Tại bảng bên trái, chọn 1 hoặc nhiều "Group" tài khoản cần chạy.
+   - Bước 2: Tích chọn các tác vụ mong muốn:
+     + [x] Login Gmail (Setting Phone): Tự động add Gmail vào máy.
+     + [x] Cài đặt App YouTube: Tự động tải YouTube từ CH Play nếu máy chưa có.
+     + [x] Chạy View Video: Chạy xem video theo các kịch bản.
+     + [x] Chạy Tương Tác Ngẫu Nhiên: Bật Like/Sub/Comment/Share.
+   - Bước 3: Chuyển sang tab "Cấu Hình View" để tùy chỉnh thời gian xem và tỷ lệ tương tác theo ý muốn (hoặc bấm "Khôi Phục Mặc Định").
+   - Bước 4: Tại bảng thiết bị bên phải, tích chọn các thiết bị muốn chạy (hoặc bấm "Chọn tất cả").
+   - Bước 5: Bấm nút "BẮT ĐẦU CHẠY TẤT CẢ" để bắt đầu tự động hóa!
+
+4. Theo dõi & Điều khiển:
+   - Xem màn hình điện thoại: Bấm nút "Xem" ở cột Điều Khiển để mở chiếu màn hình Scrcpy.
+   - Xem Log chi tiết: Nhấp đúp chuột (Double Click) vào dòng của thiết bị trên bảng để mở cửa sổ "Live Log Realtime".
+   - Dừng thiết bị: Bấm nút "Dừng" ở từng dòng hoặc bấm nút đỏ "DỪNG TOÀN BỘ".
