@@ -1,3 +1,19 @@
+[v1.0.2] - 2026-09-22
+- 🚀 THÊM KỊCH BẢN ĐĂNG KÝ TÀI KHOẢN YOUTUBE MỚI:
+  + Tự động tạo hồ sơ quốc tế ngẫu nhiên phong phú (Họ, Tên, Ngày sinh 19-35 tuổi, Mật khẩu chuẩn Google).
+  + Tự động điền biểu mẫu Google Settings: Chọn gợi ý Gmail hoặc điền username đa dạng chống trùng.
+  + Cơ chế chống khóa SĐT: Nếu Google bắt buộc xác minh số điện thoại (không có nút Skip), tự động hủy và dừng trên thiết bị đó.
+  + Tự động mở YouTube và khởi tạo Kênh cá nhân (Create channel) sau khi đăng ký thành công.
+  + Lưu tài khoản mới thành công vào file local `GmailNew_accounts.txt` và cập nhật trực tiếp vào CSDL MSSQL / API dưới Group `GmailNew` (`LoginApp=1`, `Status='Active'`).
+  + Bổ sung ô nhập số lượng tài khoản cần đăng ký trên mỗi thiết bị (`Số lượng/máy`, từ 1 đến 20).
+  + Bổ sung tùy chọn `Chạy lần lượt từng phone` (xong phone này mới sang phone tiếp theo; nếu không chọn thì tất cả phone chạy đồng thời song song).
+  + Tự động phát hiện và bỏ qua dialog sự cố đăng nhập tài khoản cũ (`There was a problem signing in to your account`) để tiếp tục click nút `+` Thêm tài khoản mới.
+- 🧹 KỊCH BẢN XÓA TÀI KHOẢN GOOGLE TRONG THIẾT BỊ:
+  + Tự động xóa sạch toàn bộ tài khoản Google trong Settings trước khi đăng ký hoặc login mới.
+- 🔄 TỰ ĐỘNG KHỞI ĐỘNG LẠI THIẾT BỊ (REBOOT) KHI LỖI KẾT NỐI UIAUTOMATOR2:
+  + Tự động reset Android Accessibility Service và dọn sạch các Stub Proxy / process uiautomator bị treo.
+  + Tự động reboot thiết bị, hỗ trợ tái kết nối qua WiFi ADB liên tục và chờ `sys.boot_completed` trước khi thử kết nối lại.
+
 
 [v1.0.1] - 2026-09-19
 - 🚀 THÊM KỊCH BẢN ĐĂNG KÝ TÀI KHOẢN YOUTUBE MỚI:
